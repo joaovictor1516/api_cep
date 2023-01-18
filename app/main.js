@@ -10,7 +10,6 @@ cep.addEventListener("blur", (event) => {
             const fieldData = document.querySelector(`#${field}`);
             if(fieldData){
                 fieldData.value = result[field];
-                console.log(result[field]);
             }
         }
     }
