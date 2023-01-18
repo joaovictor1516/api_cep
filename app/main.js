@@ -31,6 +31,8 @@ cep.addEventListener("blur", (event) => {
         })
     })
     .catch((error) => {
-        console.log("Teve o erro: " + error.menssage);
+        if(search.length < 8){
+            window.alert("CEP inválido");
+        }
     })
     });
