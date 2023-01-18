@@ -5,6 +5,15 @@ cep.addEventListener("blur", (event) => {
     
     const search = cep.value.replace("-", "");
 
+    const showData = (result) =>{
+        for(const field in result){
+            const fieldData = document.querySelector(`#${field}`);
+            if(fieldData){
+                fieldData.value = result[field];
+                console.log(result[field]);
+            }
+        }
+    }
     
     const options = {
         method: "get",
@@ -16,7 +25,7 @@ cep.addEventListener("blur", (event) => {
     .then((response) => {
         response.json()
         .then((data) => {
-            console.lgo(data);
+            showData(data);
         })
         .catch((error) => {
             console.log(error.menssage);
