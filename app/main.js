@@ -11,6 +11,10 @@ cep.addEventListener("blur", (event) => {
             if(fieldData){
                 fieldData.value = result[field];
             }
+
+            if(field === "erro" && result[field] === true){
+                window.alert("Indereço correspondente ao CEP não encontrado.");
+            }
         }
     }
     
@@ -31,8 +35,7 @@ cep.addEventListener("blur", (event) => {
         })
     })
     .catch((error) => {
-        if(search.length < 8){
-            window.alert("CEP inválido");
-        }
+        window.alert("CEP inválido.")
+        console.log(`Teve o erro: ${error}`);
     })
     });
