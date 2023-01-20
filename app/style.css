@@ -16,6 +16,11 @@ input{
     text-align: center;
 }
 
+a{
+    color: black;
+}
+
 .form-content{
-    margin:5px 0; 
+    margin:5px 0;
+    flex-direction: column;  
 }
