@@ -20,7 +20,15 @@ a{
     color: black;
 }
 
+form{
+    margin: 10px 0;
+}
+
 .form-content{
     margin:5px 0;
     flex-direction: column;  
+}
+
+#problemas{
+
 }
