@@ -52,6 +52,12 @@ label{
     margin:5px 0;
 }
 
+.form-content:hover{
+    border: 1px solid #808080;
+    border-radius: 5px;
+    box-shadow: 5px 5px #d1cbcb;
+}
+
 #problemas{
     font-size: 28px;
 }
