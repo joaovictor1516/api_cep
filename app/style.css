@@ -58,10 +58,6 @@ label{
     box-shadow: 5px 5px #d1cbcb;
 }
 
-.click{
-    background-color: slateblue;
-}
-
 input:focus{
     box-shadow: 5px 5px #d1cbcb;
 }
