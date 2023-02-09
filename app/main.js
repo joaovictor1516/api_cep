@@ -10,10 +10,6 @@ cep.addEventListener("blur", (event) => {
             const fieldData = document.querySelector(`#${field}`);
             if(fieldData){
                 fieldData.value = result[field];
-                fieldData.addEventListener("click", () => {
-                    fieldData.classList.add("click");
-                    console.log(fieldData);
-                })
             }
 
             if(field === "erro" && result[field] === true){
