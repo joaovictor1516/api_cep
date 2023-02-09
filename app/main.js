@@ -12,7 +12,7 @@ cep.addEventListener("blur", (event) => {
                 fieldData.value = result[field];
                 fieldData.addEventListener("click", () => {
                     fieldData.classList.add("click");
-                    console.log(fieldData);//tentar mudar o container desses ids depois.
+                    console.log(fieldData);
                 })
             }
 
